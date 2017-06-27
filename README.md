@@ -4,12 +4,12 @@
 
 ## 环境配置
 
-###Windows
+### Windows
 1. 先安装Python运行环境[http://www.cnblogs.com/feeland/p/4345104.html]
 
 >最好 3.0 以上版本
 
-###Mac自带Python2.7
+### Mac自带Python2.7
 
 
 ## 使用
