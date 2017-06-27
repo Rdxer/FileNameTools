@@ -68,5 +68,5 @@ def func_custom(list):
 
 
 5. 执行脚本
-  1. Windows 脱到 cmd 中即可
+  1. Windows 拖到 cmd 中即可
   2. Mac 添加权限 `chmod  777 file_name_tool.py`, 运行 `./file_name_tool.py`
