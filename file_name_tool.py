@@ -7,16 +7,11 @@ import sys
 
 #################     配置  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  #######################
 
-# 需要被改名的文件所在的路径
-ROOT_PATH = "/Users/Rdxer/Documents/"
 
-# 是否包含目录(默认不包含)
-IS_INCLUDE_DIR = False
+ROOT_PATH =  "" 
+PATTERN = ".*?\.ass$"
+FUNCTION = ["rep","A","b"]
 
-# 筛选文件名  正则  如果只要.png的 正则  ".*?\.png$" 匹配才会保留
-# 如果没有则略过匹配
-PATTERN = ".*?\.png$"
-# PATTERN = ""  #
 
 """
 默认内置功能
@@ -39,7 +34,7 @@ PATTERN = ".*?\.png$"
 ::可选[删除数量,默认1,最后添加就行,不添加也行]
 """
 
-FUNCTION = ["rep","AA","CC"]
+IS_INCLUDE_DIR = False
 
 #自定义 使用自定义的反回newNameList,则忽略 FUNCTION 字段
 def func_custom(list):
@@ -139,7 +134,7 @@ def func_rep(list,startIndedx=0,len=0,fromStr=None,toStr=None,count=1):
 
 if __name__=="__main__":
 
-    if ROOT_PATH == "":
+    if ROOT_PATH == "" or ROOT_PATH == None:
        ROOT_PATH = need_file_path()
     root,dirs,files = next(os.walk(ROOT_PATH))
 
@@ -196,7 +191,7 @@ if __name__=="__main__":
         f = input("输入(YES)确认:")
 
     if f.upper() != "YES":
-        exit("结束运行~")
+        exit("未输入(YES)中止运行~")
 
     for item1,item2 in target:
         old = os.path.join(root,item1)
