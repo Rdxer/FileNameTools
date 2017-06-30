@@ -6,7 +6,7 @@ import re
 import sys
 
 #################     配置  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  #######################
-
+###  help ->> https://github.com/Rdxer/FileNameTools  
 
 ROOT_PATH =  "" 
 PATTERN = ".*?\.ass$"
